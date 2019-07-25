@@ -2,6 +2,7 @@ os: osx
 osx_image: xcode10.3
 before_install:
 - gem install bundler:2.0.1
-script:
+install:
 - bundle install
+script:
 - bundle exec fastlane test
