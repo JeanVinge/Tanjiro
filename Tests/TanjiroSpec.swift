@@ -14,7 +14,6 @@ class TanjiroSpec: QuickSpec {
     override func spec() {
         describe("TanjiroSpec") {
             it("works") {
-                expect(Tanjiro.name) == "Tanjiro"
             }
         }
     }
