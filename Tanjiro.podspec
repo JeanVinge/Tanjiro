@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'Tanjiro'
-  s.version = '0.0.1'
+  s.version = '1.0.0'
   s.license = { :type => "MIT", :file => "LICENSE" }
   s.summary = 'Layout Wrapper for NSLayoutAnchor'
   s.homepage = 'https://br.linkedin.com/in/jeanvinge'
