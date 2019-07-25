@@ -10,7 +10,7 @@
 [![Travis](https://img.shields.io/travis/jeanvinge/Tanjiro/master.svg)](https://travis-ci.org/jeanvinge/Tanjiro/branches)
 [![SwiftFrameworkTemplate](https://img.shields.io/badge/SwiftFramework-Template-red.svg)](http://github.com/RahulKatariya/SwiftFrameworkTemplate)
 
-Layout Wrapper for NSLayoutAnchor
+Tanjiro is a layout Wrapper using NSLayoutAnchor
 
 - [Requirements](#requirements)
 - [Installation](#installation)
@@ -19,7 +19,7 @@ Layout Wrapper for NSLayoutAnchor
 
 ## Requirements
 
-- iOS 11.0+ / Mac OS X 10.10+ / tvOS 9.0+ / watchOS 2.0+
+- iOS 11.0+
 - Xcode 10.0+
 
 ## Installation
@@ -148,7 +148,7 @@ $ git submodule update --init --recursive
 
 ## Usage
 
-With tanjiro you can create views and components more easily, it helps with view initialization and also adding constraint to it.
+*Tanjiro* let you create views easily, it helps you with custom initialization and adding constraint to it.
 
 ```swift
 var view = UIView().with {
