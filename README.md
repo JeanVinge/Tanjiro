@@ -19,7 +19,7 @@ Layout Wrapper for NSLayoutAnchor
 
 ## Requirements
 
-- iOS 8.0+ / Mac OS X 10.10+ / tvOS 9.0+ / watchOS 2.0+
+- iOS 11.0+ / Mac OS X 10.10+ / tvOS 9.0+ / watchOS 2.0+
 - Xcode 10.0+
 
 ## Installation
@@ -38,10 +38,10 @@ To integrate Tanjiro into your Xcode project using CocoaPods, specify it in your
 
 ```ruby
 source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '8.0'
+platform :ios, '11.0'
 use_frameworks!
 
-pod 'Tanjiro', '~> 0.0.1'
+pod 'Tanjiro'
 ```
 
 Then, run the following command:
@@ -67,7 +67,7 @@ $ brew install carthage
 To integrate Tanjiro into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "jeanvinge/Tanjiro" ~> 0.0.1
+github "jeanvinge/Tanjiro"
 ```
 
 </details>
@@ -85,7 +85,7 @@ import PackageDescription
 let package = Package(
     name: "HelloTanjiro",
     dependencies: [
-        .package(url: "https://github.com/jeanvinge/Tanjiro.git", .upToNextMajor(from: "0.0.1"))
+        .package(url: "https://github.com/jeanvinge/Tanjiro.git")
     ],
     targets: [
         .target(name: "HelloTanjiro", dependencies: ["Tanjiro"])
@@ -147,6 +147,23 @@ $ git submodule update --init --recursive
 </p></details>
 
 ## Usage
+
+With tanjiro you can create views and components more easily, it helps with view initialization and also adding constraint to it.
+
+```swift
+var view = UIView().with {
+    $0.backgroundColor = .green
+}
+
+container.addSubview(view)
+
+view.layout {
+    $0.centerX.equalToSuperView()
+    $0.centerY.equalToSuperView()
+    $0.width.constraint(equalToConstant: 150)
+    $0.height.constraint(lessThanOrEqualToConstant: 50)
+}
+```
 
 ## Contributing
 
