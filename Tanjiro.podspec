@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage = 'https://br.linkedin.com/in/jeanvinge'
   s.social_media_url = 'https://twitter.com/jean_vinge'
   s.authors = { "Jean Vinge" => "jean.vinge@gmail.com" }
-  s.source = { :git => "https://github.com/jeanvinge/Tanjiro.git", :tag  => "v"+s.version.to_s }
+  s.source = { :git => "https://github.com/jeanvinge/Tanjiro.git", :tag  => +s.version.to_s }
   s.platforms = { :ios => "11.0" }
   s.requires_arc = true
   s.swift_version = '5.0'
