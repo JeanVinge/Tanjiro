@@ -8,12 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3549BB501DA38A2000C63030 /* Tanjiro.h in Headers */ = {isa = PBXBuildFile; fileRef = 3549BB181DA3890B00C63030 /* Tanjiro.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3549BB661DA38ADB00C63030 /* Tanjiro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3549BB211DA389CD00C63030 /* Tanjiro.framework */; };
-		3549BB8B1DA38C0A00C63030 /* TanjiroSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3549BB8A1DA38C0A00C63030 /* TanjiroSpec.swift */; };
-		35B7422F1F82A5E000829B21 /* Nimble.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 35B7422D1F82A5DF00829B21 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		35B742301F82A5E000829B21 /* Quick.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 35B7422E1F82A5E000829B21 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		35B742311F82A5EC00829B21 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B7422D1F82A5DF00829B21 /* Nimble.framework */; };
-		35B742321F82A5EC00829B21 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B7422E1F82A5E000829B21 /* Quick.framework */; };
+		382056F622EB32500092EC54 /* TanjiroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382056F522EB32500092EC54 /* TanjiroTests.swift */; };
+		382056F822EB32500092EC54 /* Tanjiro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3549BB211DA389CD00C63030 /* Tanjiro.framework */; };
 		38856F7322EA241300182149 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38856F7222EA241300182149 /* Builder.swift */; };
 		38E8FF5522E8CFCA00387DFA /* LayoutProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E8FF5222E8CFCA00387DFA /* LayoutProxy.swift */; };
 		38E8FF5622E8CFCA00387DFA /* LayoutAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E8FF5322E8CFCA00387DFA /* LayoutAttribute.swift */; };
@@ -22,29 +18,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3549BB671DA38ADB00C63030 /* PBXContainerItemProxy */ = {
+		382056F922EB32500092EC54 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3549BAFC1DA387DB00C63030 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 3549BB201DA389CD00C63030;
-			remoteInfo = "Tanjiro-iOS";
+			remoteInfo = Tanjiro;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		35B7422C1F82A2C700829B21 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				35B7422F1F82A5E000829B21 /* Nimble.framework in Embed Frameworks */,
-				35B742301F82A5E000829B21 /* Quick.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		353A78F6224F762800055190 /* Tanjiro.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Tanjiro.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -54,14 +35,12 @@
 		3549BB551DA38A5E00C63030 /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
 		3549BB571DA38A8800C63030 /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
 		3549BB581DA38A8800C63030 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3549BB611DA38ADB00C63030 /* TanjiroTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TanjiroTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3549BB8A1DA38C0A00C63030 /* TanjiroSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TanjiroSpec.swift; sourceTree = "<group>"; };
-		354AD5841F8A659800B18FAE /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/tvOS/Quick.framework; sourceTree = "<group>"; };
-		354AD5851F8A659800B18FAE /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/tvOS/Nimble.framework; sourceTree = "<group>"; };
-		35B7422D1F82A5DF00829B21 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
-		35B7422E1F82A5E000829B21 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
-		35B742341F82A61D00829B21 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/Mac/Nimble.framework; sourceTree = "<group>"; };
-		35B742351F82A61E00829B21 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/Mac/Quick.framework; sourceTree = "<group>"; };
+		382056E822EB2F8A0092EC54 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		382056E922EB2F8A0092EC54 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		382056F322EB32500092EC54 /* TanjiroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TanjiroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		382056F522EB32500092EC54 /* TanjiroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanjiroTests.swift; sourceTree = "<group>"; };
+		382056F722EB32500092EC54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38856F7222EA241300182149 /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
 		38E8FF5222E8CFCA00387DFA /* LayoutProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutProxy.swift; sourceTree = "<group>"; };
 		38E8FF5322E8CFCA00387DFA /* LayoutAttribute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutAttribute.swift; sourceTree = "<group>"; };
@@ -77,13 +56,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3549BB5E1DA38ADB00C63030 /* Frameworks */ = {
+		382056F022EB32500092EC54 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35B742311F82A5EC00829B21 /* Nimble.framework in Frameworks */,
-				35B742321F82A5EC00829B21 /* Quick.framework in Frameworks */,
-				3549BB661DA38ADB00C63030 /* Tanjiro.framework in Frameworks */,
+				382056F822EB32500092EC54 /* Tanjiro.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +73,7 @@
 				353A78F6224F762800055190 /* Tanjiro.playground */,
 				3549BB161DA3890B00C63030 /* Sources */,
 				3549BB191DA3890B00C63030 /* Tests */,
+				382056F422EB32500092EC54 /* TanjiroTests */,
 				3549BB061DA387DB00C63030 /* Products */,
 				357D954B1DA3F2B400AEC55F /* Frameworks */,
 			);
@@ -105,7 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				3549BB211DA389CD00C63030 /* Tanjiro.framework */,
-				3549BB611DA38ADB00C63030 /* TanjiroTests-iOS.xctest */,
+				382056F322EB32500092EC54 /* TanjiroTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -150,12 +128,8 @@
 		357D954B1DA3F2B400AEC55F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				35B742341F82A61D00829B21 /* Nimble.framework */,
-				35B742351F82A61E00829B21 /* Quick.framework */,
-				35B7422D1F82A5DF00829B21 /* Nimble.framework */,
-				35B7422E1F82A5E000829B21 /* Quick.framework */,
-				354AD5851F8A659800B18FAE /* Nimble.framework */,
-				354AD5841F8A659800B18FAE /* Quick.framework */,
+				382056E922EB2F8A0092EC54 /* Nimble.framework */,
+				382056E822EB2F8A0092EC54 /* Quick.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -167,6 +141,15 @@
 				38E8FF5122E8CFAA00387DFA /* Layout */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		382056F422EB32500092EC54 /* TanjiroTests */ = {
+			isa = PBXGroup;
+			children = (
+				382056F522EB32500092EC54 /* TanjiroTests.swift */,
+				382056F722EB32500092EC54 /* Info.plist */,
+			);
+			path = TanjiroTests;
 			sourceTree = "<group>";
 		};
 		38856F7122EA23EA00182149 /* Helpers */ = {
@@ -202,9 +185,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		3549BB201DA389CD00C63030 /* Tanjiro-iOS */ = {
+		3549BB201DA389CD00C63030 /* Tanjiro */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3549BB261DA389CD00C63030 /* Build configuration list for PBXNativeTarget "Tanjiro-iOS" */;
+			buildConfigurationList = 3549BB261DA389CD00C63030 /* Build configuration list for PBXNativeTarget "Tanjiro" */;
 			buildPhases = (
 				3549BB1C1DA389CD00C63030 /* Sources */,
 				3549BB1D1DA389CD00C63030 /* Frameworks */,
@@ -215,28 +198,28 @@
 			);
 			dependencies = (
 			);
-			name = "Tanjiro-iOS";
+			name = Tanjiro;
 			productName = "Tanjiro-iOS";
 			productReference = 3549BB211DA389CD00C63030 /* Tanjiro.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		3549BB601DA38ADB00C63030 /* TanjiroTests-iOS */ = {
+		382056F222EB32500092EC54 /* TanjiroTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3549BB691DA38ADB00C63030 /* Build configuration list for PBXNativeTarget "TanjiroTests-iOS" */;
+			buildConfigurationList = 382056FB22EB32500092EC54 /* Build configuration list for PBXNativeTarget "TanjiroTests" */;
 			buildPhases = (
-				3549BB5D1DA38ADB00C63030 /* Sources */,
-				3549BB5E1DA38ADB00C63030 /* Frameworks */,
-				3549BB5F1DA38ADB00C63030 /* Resources */,
-				35B7422C1F82A2C700829B21 /* Embed Frameworks */,
+				382056FF22EB32B70092EC54 /* ShellScript */,
+				382056EF22EB32500092EC54 /* Sources */,
+				382056F022EB32500092EC54 /* Frameworks */,
+				382056F122EB32500092EC54 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3549BB681DA38ADB00C63030 /* PBXTargetDependency */,
+				382056FA22EB32500092EC54 /* PBXTargetDependency */,
 			);
-			name = "TanjiroTests-iOS";
-			productName = "TanjiroTests-iOS";
-			productReference = 3549BB611DA38ADB00C63030 /* TanjiroTests-iOS.xctest */;
+			name = TanjiroTests;
+			productName = TanjiroTests;
+			productReference = 382056F322EB32500092EC54 /* TanjiroTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -245,7 +228,7 @@
 		3549BAFC1DA387DB00C63030 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0800;
+				LastSwiftUpdateCheck = 1030;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = jeanvinge;
 				TargetAttributes = {
@@ -254,9 +237,8 @@
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
-					3549BB601DA38ADB00C63030 = {
-						CreatedOnToolsVersion = 8.0;
-						LastSwiftMigration = 1020;
+					382056F222EB32500092EC54 = {
+						CreatedOnToolsVersion = 10.3;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -274,8 +256,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3549BB201DA389CD00C63030 /* Tanjiro-iOS */,
-				3549BB601DA38ADB00C63030 /* TanjiroTests-iOS */,
+				3549BB201DA389CD00C63030 /* Tanjiro */,
+				382056F222EB32500092EC54 /* TanjiroTests */,
 			);
 		};
 /* End PBXProject section */
@@ -288,7 +270,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3549BB5F1DA38ADB00C63030 /* Resources */ = {
+		382056F122EB32500092EC54 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -296,6 +278,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		382056FF22EB32B70092EC54 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bundle exec carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3549BB1C1DA389CD00C63030 /* Sources */ = {
@@ -310,21 +312,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3549BB5D1DA38ADB00C63030 /* Sources */ = {
+		382056EF22EB32500092EC54 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3549BB8B1DA38C0A00C63030 /* TanjiroSpec.swift in Sources */,
+				382056F622EB32500092EC54 /* TanjiroTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3549BB681DA38ADB00C63030 /* PBXTargetDependency */ = {
+		382056FA22EB32500092EC54 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3549BB201DA389CD00C63030 /* Tanjiro-iOS */;
-			targetProxy = 3549BB671DA38ADB00C63030 /* PBXContainerItemProxy */;
+			target = 3549BB201DA389CD00C63030 /* Tanjiro */;
+			targetProxy = 382056F922EB32500092EC54 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -458,7 +460,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -478,7 +483,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -489,38 +497,46 @@
 			};
 			name = Release;
 		};
-		3549BB6A1DA38ADB00C63030 /* Debug */ = {
+		382056FC22EB32500092EC54 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = TanjiroTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.tanjiro.TanjiroTests;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = br.jean.vinge.TanjiroTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		3549BB6B1DA38ADB00C63030 /* Release */ = {
+		382056FD22EB32500092EC54 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = TanjiroTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.tanjiro.TanjiroTests;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = br.jean.vinge.TanjiroTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -536,7 +552,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3549BB261DA389CD00C63030 /* Build configuration list for PBXNativeTarget "Tanjiro-iOS" */ = {
+		3549BB261DA389CD00C63030 /* Build configuration list for PBXNativeTarget "Tanjiro" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3549BB271DA389CD00C63030 /* Debug */,
@@ -545,11 +561,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3549BB691DA38ADB00C63030 /* Build configuration list for PBXNativeTarget "TanjiroTests-iOS" */ = {
+		382056FB22EB32500092EC54 /* Build configuration list for PBXNativeTarget "TanjiroTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3549BB6A1DA38ADB00C63030 /* Debug */,
-				3549BB6B1DA38ADB00C63030 /* Release */,
+				382056FC22EB32500092EC54 /* Debug */,
+				382056FD22EB32500092EC54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
