@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3549BB201DA389CD00C63030"
                BuildableName = "Tanjiro.framework"
-               BlueprintName = "Tanjiro-iOS"
+               BlueprintName = "Tanjiro"
                ReferencedContainer = "container:Tanjiro.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -26,15 +26,16 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      codeCoverageEnabled = "YES"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3549BB601DA38ADB00C63030"
-               BuildableName = "TanjiroTests-iOS.xctest"
-               BlueprintName = "TanjiroTests-iOS"
+               BlueprintIdentifier = "382056F222EB32500092EC54"
+               BuildableName = "TanjiroTests.xctest"
+               BlueprintName = "TanjiroTests"
                ReferencedContainer = "container:Tanjiro.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -44,7 +45,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3549BB201DA389CD00C63030"
             BuildableName = "Tanjiro.framework"
-            BlueprintName = "Tanjiro-iOS"
+            BlueprintName = "Tanjiro"
             ReferencedContainer = "container:Tanjiro.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -66,7 +67,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3549BB201DA389CD00C63030"
             BuildableName = "Tanjiro.framework"
-            BlueprintName = "Tanjiro-iOS"
+            BlueprintName = "Tanjiro"
             ReferencedContainer = "container:Tanjiro.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -84,7 +85,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3549BB201DA389CD00C63030"
             BuildableName = "Tanjiro.framework"
-            BlueprintName = "Tanjiro-iOS"
+            BlueprintName = "Tanjiro"
             ReferencedContainer = "container:Tanjiro.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

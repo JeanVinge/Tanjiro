@@ -4,5 +4,6 @@ before_install:
 - gem install bundler:2.0.1
 install:
 - bundle install
+- bundle exec carthage build
 script:
 - bundle exec fastlane test
