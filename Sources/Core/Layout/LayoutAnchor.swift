@@ -1,7 +1,10 @@
-//  LayoutAnchor.swift
-//  Minha NET
 //
-//  Copyright (c) 2019 NET. All rights reserved.
+//  LayoutAnchor.swift
+//  Tanjiro-iOS
+//
+//  Created by jean.vinge on 25/07/19.
+//  Copyright © 2019 jeanvinge. All rights reserved.
+//
 
 import UIKit
 

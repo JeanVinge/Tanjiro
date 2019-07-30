@@ -1,7 +1,9 @@
 //  LayoutProxy.swift
-//  Minha NET
+//  Tanjiro-iOS
 //
-//  Copyright (c) 2019 NET. All rights reserved.
+//  Created by jean.vinge on 25/07/19.
+//  Copyright © 2019 jeanvinge. All rights reserved.
+//
 
 import UIKit
 
