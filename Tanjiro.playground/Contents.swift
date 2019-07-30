@@ -13,7 +13,7 @@ view.layout {
     $0.centerX.equalToSuperView()
     $0.centerY.equalToSuperView()
     $0.width.constraint(equalToConstant: 30)
-    $0.height.constraint(lessThanOrEqualToConstant: 30)
+    $0.height.constraint(equalToConstant: 30)
 }
 
 import PlaygroundSupport
