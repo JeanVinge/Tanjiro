@@ -3,20 +3,20 @@ import UIKit
 
 let container = UIView(frame: CGRect(x: 0, y: 0, width: 500, height: 500))
 
-var view = UIView().with {
-    $0.backgroundColor = .green
-}
+var view = UIView()
+    .with
+    .backgroundColor(.red)
+    .build()
 
 container.addSubview(view)
 
-view.layout {
-    $0.centerX.equalToSuperView()
-    $0.centerY.equalToSuperView()
-    $0.width.constraint(equalToConstant: 30)
-    $0.height.constraint(equalToConstant: 30)
-}
+view.layout()
+    .top()
+    .left()
+    .width(.constant(100))
+    .height(.constant(200))
+    .equalToSuperView()
 
 import PlaygroundSupport
 
 PlaygroundPage.current.liveView = container
-
