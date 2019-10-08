@@ -42,21 +42,21 @@ extension AnchorX: EqualToProtocol {
 
     public func equalTo(_ anchor: AnchorConvertable) {
         if let anchorX = try? anchor.toAnchorX() {
-            anchorX.constraint(equalTo: anchorX,
+            self.anchor.constraint(equalTo: anchorX,
                                constant: option.value).isActive = true
         }
     }
 
     public func greaterThanOrEqualTo(_ anchor: AnchorConvertable) {
         if let anchorX = try? anchor.toAnchorX() {
-            anchorX.constraint(greaterThanOrEqualTo: anchorX,
+            self.anchor.constraint(greaterThanOrEqualTo: anchorX,
                               constant: option.value).isActive = true
         }
     }
 
     public func lessThanOrEqualTo(_ anchor: AnchorConvertable) {
         if let anchorX = try? anchor.toAnchorX() {
-            anchorX.constraint(lessThanOrEqualTo: anchorX,
+            self.anchor.constraint(lessThanOrEqualTo: anchorX,
                                constant: option.value).isActive = true
         }
     }

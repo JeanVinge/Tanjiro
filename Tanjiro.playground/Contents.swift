@@ -13,8 +13,8 @@ container.addSubview(view)
 view.layout()
     .top()
     .left()
-    .width(.constant(100))
-    .height(.constant(200))
+    .right()
+    .bottom()
     .equalToSuperView()
 
 import PlaygroundSupport

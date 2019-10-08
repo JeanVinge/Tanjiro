@@ -22,7 +22,7 @@ public class LayoutBuilder {
     }
 
     public func left(_ option: AnchorOption = .none) -> LayoutBuilder {
-        makeContraint(.leading, option: option)
+        makeContraint(.left, option: option)
         return self
     }
 
