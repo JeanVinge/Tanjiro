@@ -50,7 +50,7 @@ extension LayoutCompatible where Self: AnyObject {
         set {}
     }
 
-    func with(configure: (inout Self) -> Void) -> Self {
+    public func with(configure: (inout Self) -> Void) -> Self {
         var this = self
         configure(&this)
         return this

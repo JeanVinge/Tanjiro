@@ -8,7 +8,17 @@ var view = UIView()
     .backgroundColor(.red)
     .build()
 
+var label = UILabel().with
+    .backgroundColor(.white)
+    .font(UIFont.systemFont(ofSize: 12, weight: .heavy))
+    .text("TESTE")
+    .build()
+
+
 container.addSubview(view)
+view.addSubview(label)
+
+label.layout().width(.constant(10)).centerX().centerY().equalToSuperView()
 
 view.layout()
     .top()
