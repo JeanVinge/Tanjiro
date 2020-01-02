@@ -35,6 +35,7 @@ view.layout()
     .top(.constant(10))
     .leading(.constant(10))
     .bottom(.constant(-10))
+    .width(.constant(200))
     .equalToSuperView()
 
 view2.layout {
