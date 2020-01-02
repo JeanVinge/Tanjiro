@@ -17,67 +17,59 @@ public class LayoutBuilder {
 
     // MARK: Init
 
-    init(_ view: UIView) {
+    init(_ view: UIView, anchors: [EqualToProtocol] = []) {
         self.view = view
+        self.anchors = anchors
     }
 
     public func left(_ option: AnchorOption = .none) -> LayoutBuilder {
-        makeContraint(.left, option: option)
-        return self
+        return create(anchor: .left, option: option)
     }
 
     public func leading(_ option: AnchorOption = .none) -> LayoutBuilder {
-        makeContraint(.leading, option: option)
-        return self
+        return create(anchor: .leading, option: option)
     }
 
     public func right(_ option: AnchorOption = .none) -> LayoutBuilder {
-        makeContraint(.right, option: option)
-        return self
+        return create(anchor: .right, option: option)
     }
 
     public func trailing(_ option: AnchorOption = .none) -> LayoutBuilder {
-        makeContraint(.trailing, option: option)
-        return self
+        return create(anchor: .trailing, option: option)
     }
 
     public func top(_ option: AnchorOption = .none) -> LayoutBuilder {
-        makeContraint(.top, option: option)
-        return self
+        return create(anchor: .top, option: option)
     }
 
     public func bottom(_ option: AnchorOption = .none) -> LayoutBuilder {
-        makeContraint(.bottom, option: option)
-        return self
+        return create(anchor: .bottom, option: option)
     }
 
     public func centerX(_ option: AnchorOption = .none) -> LayoutBuilder {
-        makeContraint(.centerX, option: option)
-        return self
+        return create(anchor: .centerX, option: option)
     }
 
     public func centerY(_ option: AnchorOption = .none) -> LayoutBuilder {
-        makeContraint(.centerY, option: option)
-        return self
+        return create(anchor: .centerY, option: option)
     }
 
     public func width(_ option: AnchorOption = .none) -> LayoutBuilder {
-        makeContraint(.width, option: option)
-        return self
+        return create(anchor: .width, option: option)
     }
 
     public func height(_ option: AnchorOption = .none) -> LayoutBuilder {
-        makeContraint(.height, option: option)
-        return self
+        return create(anchor: .height, option: option)
     }
-
-    private func makeContraint(_ type: AnchorType,
-                               option: AnchorOption) {
-        add(AnchorFactory.build(type, view: view, option: option))
-    }
-
-    private func add(_ contraint: EqualToProtocol) {
-        anchors.append(contraint)
+    
+    // MARK: Helpers
+    
+    private func create(anchor type: AnchorType,
+                                  option: AnchorOption) -> LayoutBuilder {
+        let anchor = AnchorFactory.build(type,
+                                         view: view,
+                                         option: option)
+        return LayoutBuilder(view, anchors: anchors + [anchor])
     }
 }
 
@@ -101,19 +93,19 @@ extension LayoutBuilder: EqualToProtocol {
         }
     }
 
-    public func equalTo(_ anchor: AnchorConvertable) {
+    public func equalTo(_ anchor: AnchorConvertible) {
         anchors.forEach { a in
             a.equalTo(anchor)
         }
     }
 
-    public func greaterThanOrEqualTo(_ anchor: AnchorConvertable) {
+    public func greaterThanOrEqualTo(_ anchor: AnchorConvertible) {
         anchors.forEach { a in
             a.greaterThanOrEqualTo(anchor)
         }
     }
 
-    public func lessThanOrEqualTo(_ anchor: AnchorConvertable) {
+    public func lessThanOrEqualTo(_ anchor: AnchorConvertible) {
         anchors.forEach { a in
             a.lessThanOrEqualTo(anchor)
         }

@@ -16,17 +16,13 @@ protocol Anchor {
 }
 
 public enum AnchorOption {
-    case inset(CGFloat)
-    case offset(CGFloat)
     case multiplier(CGFloat)
     case constant(CGFloat)
     case none
 
     var value: CGFloat {
         switch self {
-        case let .inset(value),
-             let .offset(value),
-             let .multiplier(value),
+        case let .multiplier(value),
              let .constant(value):
             return value
         case .none: return 0

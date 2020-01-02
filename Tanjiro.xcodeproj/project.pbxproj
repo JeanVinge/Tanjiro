@@ -20,7 +20,7 @@
 		38E8FF5522E8CFCA00387DFA /* LayoutBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E8FF5222E8CFCA00387DFA /* LayoutBuilder.swift */; };
 		38E8FF5722E8CFCA00387DFA /* EqualToProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E8FF5422E8CFCA00387DFA /* EqualToProtocol.swift */; };
 		38F611EA234B5CBA000C78C5 /* TanjiroError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F611E9234B5CBA000C78C5 /* TanjiroError.swift */; };
-		38F611EC234B5EE2000C78C5 /* AnchorConvertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F611EB234B5EE2000C78C5 /* AnchorConvertable.swift */; };
+		38F611EC234B5EE2000C78C5 /* AnchorConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F611EB234B5EE2000C78C5 /* AnchorConvertible.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +57,7 @@
 		38E8FF5222E8CFCA00387DFA /* LayoutBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutBuilder.swift; sourceTree = "<group>"; };
 		38E8FF5422E8CFCA00387DFA /* EqualToProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EqualToProtocol.swift; sourceTree = "<group>"; };
 		38F611E9234B5CBA000C78C5 /* TanjiroError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanjiroError.swift; sourceTree = "<group>"; };
-		38F611EB234B5EE2000C78C5 /* AnchorConvertable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorConvertable.swift; sourceTree = "<group>"; };
+		38F611EB234B5EE2000C78C5 /* AnchorConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorConvertible.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,7 +172,7 @@
 				38CBA83323485A9000767509 /* AnchorY.swift */,
 				38CBA83523485A9900767509 /* AnchorX.swift */,
 				38CBA83723485AA400767509 /* AnchorDimension.swift */,
-				38F611EB234B5EE2000C78C5 /* AnchorConvertable.swift */,
+				38F611EB234B5EE2000C78C5 /* AnchorConvertible.swift */,
 			);
 			path = Anchor;
 			sourceTree = "<group>";
@@ -351,7 +351,7 @@
 				386956FD234B4F320093C4AA /* AnchorFactory.swift in Sources */,
 				38CBA83423485A9000767509 /* AnchorY.swift in Sources */,
 				38E8FF5722E8CFCA00387DFA /* EqualToProtocol.swift in Sources */,
-				38F611EC234B5EE2000C78C5 /* AnchorConvertable.swift in Sources */,
+				38F611EC234B5EE2000C78C5 /* AnchorConvertible.swift in Sources */,
 				38CBA83023483B6A00767509 /* Anchor.swift in Sources */,
 				38856F7322EA241300182149 /* StyleBuilder.swift in Sources */,
 				386956FB2348BC4C0093C4AA /* AnchorDimension.swift in Sources */,

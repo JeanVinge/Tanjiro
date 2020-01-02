@@ -22,6 +22,7 @@ enum AnchorType {
 }
 
 struct AnchorFactory {
+    
     static func build(_ type: AnchorType,
                       view: UIView,
                       option: AnchorOption = .none) -> EqualToProtocol {
